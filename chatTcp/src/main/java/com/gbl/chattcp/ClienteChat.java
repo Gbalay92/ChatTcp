@@ -41,6 +41,7 @@ public class ClienteChat implements Runnable{
         connected=true;
     }
 
+
     public Socket getSocket() {
         return socket;
     }

@@ -4,12 +4,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gbl.chattcp.ChatController">
+<AnchorPane prefHeight="379.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gbl.chattcp.ChatController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
-
-    <TextArea fx:id="chat" editable="false" wrapText="true" />
-    <TextField fx:id="msg" />
-    <Button fx:id="send" onAction="#onSendClick" defaultButton="true" text="Send" />
-</VBox>
+   <Button layoutX="513.0" layoutY="333.0" mnemonicParsing="false" onAction="#onExitClick" text="Exit" />
+    <Label fx:id="user" text="" />
+    <TextArea fx:id="chat" editable="false" layoutX="52.0" layoutY="62.0" prefHeight="192.0" prefWidth="479.0" wrapText="true" />
+    <TextField fx:id="msg" layoutX="51.0" layoutY="264.0" prefHeight="26.0" prefWidth="479.0" />
+    <Button fx:id="send" defaultButton="true" layoutX="272.0" layoutY="307.0" onAction="#onSendClick" text="Send" />
+</AnchorPane>
